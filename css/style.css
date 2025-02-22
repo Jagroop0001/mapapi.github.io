@@ -1,0 +1,73 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+tr,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-family: "Noto Sans", serif;
+}
+
+/* .noto-sans-properties-to-use {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  } */
+.txtcenter {
+    text-align: center;
+}
+
+#map {
+    height: 100vh;
+    width: 75%;
+    cursor: crosshair !important;
+}
+
+.mapbody {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .map-section {
+    border: 1px solid red;
+} */
+
+.text-section {
+    /* border: 1px solid red; */
+    width: 24%;
+}
+
+.text-section h2 {
+    margin: 25px 0px;
+}
+
+.text-section table {
+    width: 100%;
+}
+
+.td_size {
+    width: 40px;
+}
+
+.text-section input {
+    width: 60%;
+    border: 1px solid #a6a6a6;
+    padding: 7px 7px;
+    border-radius: 0px;
+}

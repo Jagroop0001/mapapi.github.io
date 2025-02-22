@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub | Jagroop</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- Custom Font (Noto Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section class="mapbody">
+      <!-- 1st section -->
+      <div class="map-section" id="map"></div>
+
+      <!-- 2nd section -->
+      <div class="text-section">
+        <h2 class="txtcenter">Automatic Locations</h2>
+        <form>
+          <table cellspacing="5">
+            <tbody>
+              <tr>
+                <td class="td_size"><label for="maplat">Lat.</label></td>
+                <td><input type="text" id="maplat" readonly></td>
+              </tr>
+              <tr>
+                <td><label for="maplon">Lon.</label></td>
+                <td><input type="text" id="maplon" readonly></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+
+
+
+  <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+      ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });</script>
+</body>
+<script src="js/script.js"></script>
+
+</html>
