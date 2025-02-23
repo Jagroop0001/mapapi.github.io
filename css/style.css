@@ -33,24 +33,19 @@ body {
     text-align: center;
 }
 
-#map {
+.map-section {
+    display: inline-block;
+    vertical-align: top;
     height: 100vh;
-    width: 75%;
-    cursor: crosshair !important;
+    width: 73%;
+    cursor: crosshair;
 }
-
-.mapbody {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* .map-section {
-    border: 1px solid red;
-} */
 
 .text-section {
-    /* border: 1px solid red; */
     width: 24%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1%;
 }
 
 .text-section h2 {
@@ -70,4 +65,20 @@ body {
     border: 1px solid #a6a6a6;
     padding: 7px 7px;
     border-radius: 0px;
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+    .map-section {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .text-section {
+        width: 100%;
+    }
+    .text-section h2{
+        text-align: center;
+    }
+
 }
