@@ -67,6 +67,7 @@ body {
     border-radius: 0px;
 }
 
+
 @media (min-width: 0px) and (max-width: 576px) {
 
     .map-section {
@@ -82,3 +83,4 @@ body {
     }
 
 }
+
