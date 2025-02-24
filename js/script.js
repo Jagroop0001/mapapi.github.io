@@ -14,7 +14,7 @@ map.on('click', function (e) {
     document.getElementById("maplon").value = lng;
 });
 
-/*
+
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault(); // Disable right-click
 });
@@ -30,4 +30,3 @@ document.addEventListener("keydown", function (e) {
         e.preventDefault();
     }
 });
-*/
