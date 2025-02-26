@@ -8,17 +8,31 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <style>
         body{
-          margin:0px;
-          padding:0px;
+          margin: 0px;
+          padding: 0px;
         }
         #map {
             height: 100vh;
             width: 70%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .form{
+            display: inline-block;
+            vertical-align: top;
+            margin: 2%;
         }
     </style>
 </head>
 <body>
     <div id="map"></div>
+    <form>
+        <label for="latval">Latitude</label>
+        <input type="text" id="latval" readonly/>
+
+        <label for="longval">Longitude</label>
+        <input type="text" id="longval" readonly/>
+    </form>
 
     <!-- Include Leaflet.js library -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -39,6 +53,8 @@
 
             // Display the latitude and longitude in an alert
             alert("Latitude: " + lat + "\nLongitude: " + lng);
+            docyment.getElementById('latval').value= lat;
+            docyment.getElementById('longval').value= lng;
         });
     </script>
 
