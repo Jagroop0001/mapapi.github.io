@@ -1,1 +1,48 @@
-z
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Get Lat/Lng (Using Leaflet.js)</title>
+    <!-- Include Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body{
+          margin:0px;
+          padding:0px;
+        }
+        #map {
+            height: 100vh;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click on the Map to Get Latitude and Longitude</h1>
+    <div id="map"></div>
+
+    <!-- Include Leaflet.js library -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([51.505, -0.09], 13);  // Default view set to London coordinates
+
+        // Add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Listen for clicks on the map
+        map.on('click', function(event) {
+            var lat = event.latlng.lat;
+            var lng = event.latlng.lng;
+
+            // Display the latitude and longitude in an alert
+            alert("Latitude: " + lat + "\nLongitude: " + lng);
+        });
+    </script>
+
+</body>
+</html>
