@@ -20,7 +20,8 @@
         .form{
             display: inline-block;
             vertical-align: top;
-            margin: 2%;
+            padding: 2%;
+            width: 29%;
         }
     </style>
 </head>
@@ -52,9 +53,9 @@
             var lng = event.latlng.lng;
 
             // Display the latitude and longitude in an alert
-            alert("Latitude: " + lat + "\nLongitude: " + lng);
-            docyment.getElementById('latval').value= lat;
-            docyment.getElementById('longval').value= lng;
+            //alert("Latitude: " + lat + "\nLongitude: " + lng);
+            document.getElementById('latval').value= lat;
+            document.getElementById('longval').value= lng;
         });
     </script>
 
