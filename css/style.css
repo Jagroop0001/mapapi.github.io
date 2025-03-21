@@ -21,6 +21,11 @@ body {
     font-family: "Noto Sans", serif;
 }
 
+:root {
+    --primary-color: #F29F58;
+
+}
+
 /* .noto-sans-properties-to-use {
     font-family: "Noto Sans", serif;
     font-optical-sizing: auto;
@@ -29,16 +34,66 @@ body {
     font-variation-settings:
       "wdth" 100;
   } */
+
 .txtcenter {
     text-align: center;
 }
 
+
+
+
+/* Navbar starts here */
+.roop_navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 50px;
+}
+
+.roop_navbar a {
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    transition: 400ms;
+}
+
+.roop_navbar a:hover {
+    color: #FFFFFF;
+}
+
+.active {
+    color: #FFFFFF !important;
+}
+
+
+/* Navbar ends here */
+
+
+/* Home page starts here */
+.demo-text{
+    display: flex;
+    height: calc(100vh - 50px);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/* Home page ends here */
+
+
+
+
+/* Map Page starts here */
+#map {
+    height: calc(100vh - 50px);
+}
+
+
 .map-section {
     display: inline-block;
     vertical-align: top;
-    height: 100vh;
     width: 73%;
-    cursor: crosshair;
 }
 
 .text-section {
@@ -56,10 +111,6 @@ body {
     width: 100%;
 }
 
-.td_size {
-    width: 40px;
-}
-
 .text-section input {
     width: 60%;
     border: 1px solid #a6a6a6;
@@ -68,19 +119,35 @@ body {
 }
 
 
-@media (min-width: 0px) and (max-width: 576px) {
+/* Map Page ends here */
 
-    .map-section {
-        width: 100%;
-        height: 60vh;
-    }
 
-    .text-section {
-        width: 100%;
-    }
-    .text-section h2{
-        text-align: center;
-    }
-
+/* convertor code starts here */
+#error{
+    color: red;
+    margin: 10px 0px;
+}
+.text-convertor{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.text-convertor form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-convertor .inputbox{
+    border: 1px solid black;
+    border-radius: 0px;
+    font-size: 17px;
+    padding: 9px 17px;
+    width: 50vw;
+    margin-bottom: 10px;
+}
+.text-convertor .threebtns{
+    font-size: 16px;
+    padding: 9px 22px;
 }
 
+/* convertor code ends here */
