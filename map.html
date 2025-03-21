@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub | Jagroop</title>
+    <link rel="icon" type="image/x-icon" href="images/myfavicon.png">
+
+    <!-- Custom Font (Noto Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Include Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <!-- Navbar starts here -->
+    <nav class="roop_navbar">
+        <a href="index.html">Home</a>
+        <a href="map.html" class="active">Map</a>
+        <a href="convert.html">Converter</a>
+    </nav>
+    <!-- Navbar ends here -->
+
+    <!-------------------------------->
+    <div class="map-section">
+        <div id="map"></div>
+    </div>
+
+    <div class="text-section">
+        <h2>Automatic Locations</h2>
+        <form>
+            <table cellspacing="5">
+                <tbody>
+                    <tr>
+                        <td class="td_size"><label for="maplat">Lat.</label></td>
+                        <td><input type="text" id="maplat" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="maplon">Lon.</label></td>
+                        <td><input type="text" id="maplon" readonly></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <!-------------------------------->
+
+    <!-- Include Leaflet.js library -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+</body>
+<script src="js/map.js"></script>
+<script src="js/restrict.js"></script>
+
+</html>

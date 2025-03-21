@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub | Jagroop</title>
+    <link rel="icon" type="image/x-icon" href="images/myfavicon.png">
+
+    <!-- Custom Font (Noto Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar starts here -->
+    <nav class="roop_navbar">
+        <a href="index.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="convert.html" class="active">Converter</a>
+    </nav>
+    <!-- Navbar ends here -->
+
+    <!-- convertor starts here -->
+    <div class="text-convertor">
+        <div>
+            <form>
+                <input type="text" id="userinput" placeholder="type text or paste here..........." class="inputbox">
+                <div class="buttons">
+                    <input type="button" value="Uppercase" id="upper" class="threebtns firstbtnclr">
+                    <input type="button" value="Lowercase" id="lower" class="threebtns secondbtnclr">
+                    <input type="button" value="CapitalEachWord" id="capitaleach" class="threebtns thirdbtnclr">
+                </div>
+            </form>
+            <div>
+                <p id="error"></p>
+                <p id="finaloutput"></p>
+                <!-- <p id="finaloutput" contenteditable="true" aria-readonly="true"></p> -->
+            </div>
+        </div>
+    </div>
+    <!-- convertor ends here -->
+
+</body>
+<script src="js/converter.js"></script>
+<script src="js/restrict.js"></script>
+
+</html>
