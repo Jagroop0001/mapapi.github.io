@@ -151,3 +151,11 @@ body {
 }
 
 /* convertor code ends here */
+
+/* leaflet changes */
+.leaflet-control-geosearch .results{
+    color: #000000 !important;
+}
+
+
+
